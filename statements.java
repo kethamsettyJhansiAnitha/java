@@ -1,6 +1,6 @@
 package conditional;
 
-public class statements {
+public class if {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
