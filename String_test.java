@@ -19,5 +19,9 @@ System.out.println(S);
 		System.out.println(s1==s2);//true
 		System.out.println(s2==s3);//false
 		System.out.println(s3==s1);//false
-
+	
+		String S1 =new String ("Dog");
+		String S2 =new String ("Dog");
+		System.out.println(S1==S2);//false
+		System.out.println(S1.equals (S2));//true
 }
