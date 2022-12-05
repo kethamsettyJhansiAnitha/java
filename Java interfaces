@@ -1,0 +1,73 @@
+/INterfaces in java; Interfaces is nothing but a blueprint of the abstract classes.
+//An interface is completely "abstract classes" that is used to group related methods with empty bodies.
+//An interface is Service requirement specification.
+package interfaces;
+
+public interface Laptop {
+	public void  copy();
+	public void  paste();
+	public void  Cut();
+	public void  Keyboard();
+	public void  Capture();
+	default void security() {
+	System.out.println("please implements code");}
+	  static void audio() {
+	System.out.println("Lenovo audio code");
+
+	
+}
+
+}
+package interfaces;
+
+public class hp  implements Laptop{
+
+	
+	public void copy() {
+	System.out.println("Hp copy code");}
+	public void paste() {
+	System.out.println("Hp paste code");}
+	public void Cut() {
+	System.out.println("Hp cut code");}
+	public void Keyboard() {
+	System.out.println("Hp keyboard code");}
+	public void Capture() {
+	System.out.println("Hp capture code");}
+		
+	}
+package interfaces;
+
+public class lenovo  implements Laptop{
+
+	public void copy() {
+	System.out.println("Lenovo copy code");}
+	public void paste() {
+	System.out.println("Lenovo paste code");}
+	public void Cut() {
+	System.out.println("Lenovo cut code");}
+	public void Keyboard() {
+	System.out.println("Lenovo keyboard code");}
+	public void Capture() {
+	System.out.println("Lenovo capture code");}
+	public void Security() {
+	System.out.println("Lenovo Security code");}
+}
+
+package interfaces;
+
+public class user {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+lenovo lenovo = new lenovo();
+lenovo.copy();
+lenovo.paste();
+lenovo.Keyboard();
+Laptop.audio();
+hp hp =new hp();
+hp.copy();
+hp.Cut();
+hp.paste();
+hp.Capture();
+	}
+}
